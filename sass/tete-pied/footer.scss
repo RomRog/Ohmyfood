@@ -1,0 +1,35 @@
+/* ********** Footer all pages ********** */
+
+.footer {
+    background-color: $footer-bg-color;
+    color: white;
+    padding: 1.5rem;
+
+    @media (min-width: 600px) {
+        text-align: center;
+    }
+
+    &.footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__h4 {
+        @include title-font();
+        font-size: 1.4rem;
+        font-weight: normal;
+    }
+
+    & p {
+        @include text-font();
+        font-size: 1rem;
+    }
+
+    .fa-utensils {
+        padding-right: 1rem;
+    }
+    
+    .fa-hands-helping {
+        padding-right: 0.5rem;
+    }
+}

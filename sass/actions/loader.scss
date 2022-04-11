@@ -1,54 +1,92 @@
 /* ********** Loader ********** */
 .loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #ededed;
-}
-  
-.loader {
-    max-width: 15rem;
-    width: 100%;
-    height: auto;
-    stroke-linecap: round;
-}
-  
-circle {
-    fill: none;
-    stroke-width: 3.5;
-    animation-name: preloader;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transform-origin: 170px 170px;
-    will-change: transform;
-  
-    &:nth-of-type(1) {
-      stroke-dasharray: 550px;
-    }
-  
-    &:nth-of-type(2) {
-      stroke-dasharray: 500px;
-    }
-  
-    &:nth-of-type(3) {
-      stroke-dasharray: 450px;
-    }
-  
-    &:nth-of-type(4) {
-      stroke-dasharray: 300px;
-    }
-  
-    @for $i from 1 through 4 {
-      &:nth-of-type(#{$i}) {
-        animation-delay: -#{$i * 0.15}s;
+  background: $bloc-bg-color;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 500%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform-origin:top;
+  transform: scale(0);
+  animation: loaderAppaer 3s;
+    &__spinner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 15rem;
+      &__title {
+        font-family: Shrikhand;
+        font-size: 3rem;
+        padding-bottom: 3rem;
       }
-    }
+      &__ball {
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+          &__item {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+
+              &_primaryColor {
+                  background: $primary-color;
+              }
+              &_secondaryColor {
+                  background: $secondary-color;
+              }
+              &_tertiaryColor {
+                  background: $tertiary-color;
+              }
+              &:nth-child(1) {
+                  animation: rebound 0.4s alternate infinite;
+              }
+              &:nth-child(2) {
+                  animation: rebound 0.4s 0.1s alternate infinite;
+              }
+              &:nth-child(3) {
+                  animation: rebound 0.4s 0.2s alternate infinite;
+              }
+          } 
+      }
+   }
 }
-  
-@keyframes preloader {
-    50% {
-      transform: rotate(360deg);
-    }
+
+@keyframes loaderAppaer {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+   60% {
+      opacity: 1;
+      transform: scale(1);
+  }
+   70% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  90% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0);
+      display: none;
+  }
+} 
+
+@keyframes rebound {
+  0% {
+      transform: translate3d(0, 10px, 0);
+  }
+  100% {
+      transform: translate3d(0, -20px, 0);
+  }
 }

@@ -151,6 +151,108 @@ img {
   }
 }
 
+/* ********** Buttons "Explorer" & "Commander ********** */
+
+.btn {
+  background: radial-gradient(ellipse farthest-corner at top left, #FF79DA, #9356DC);
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0.2rem 0.6rem 0.5rem 0 rgba(92, 90, 90, 0.1);
+}
+
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0.2rem 0.4rem 0.5rem 0.5rem rgba(58, 57, 57, 0.1);
+}
+
+/* ********** Hearts filling when hover ********** */
+
+.fa-heart {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  animation: heartFilling 1s forwards;
+}
+
+@keyframes heartFilling {
+  0% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 0%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  20% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 10%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  30% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  40% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  50% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  60% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  70% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  80% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  90% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  100% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+}
+
 /* ********** Home ********** */
 
 .location {

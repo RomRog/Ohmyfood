@@ -7,14 +7,14 @@ img {
   object-fit: cover;
 }
 
-/* ********** Header all pages ********** */
+/*TETE TOUTES LES PAGES*/
 
 .header__title {
   text-align: center;
   font-family: "Shrikhand", cursive;
 }
 
-/* ********** Footer all pages ********** */
+/*PIED TOUTES LES PAGES*/
 
 .footer {
   background-color: #353535;
@@ -53,7 +53,7 @@ img {
 }
 
 
-/* ********** Loader ********** */
+/*CHARGEMENT*/
 
 .loading {
   background: #F6F6F6;
@@ -151,7 +151,7 @@ img {
   }
 }
 
-/* ********** Buttons "Explorer" & "Commander ********** */
+/*Bouttons "Explorer" & "Commander"*/
 
 .btn {
   background: radial-gradient(ellipse farthest-corner at top left, #FF79DA, #9356DC);
@@ -169,7 +169,7 @@ img {
   box-shadow: 0.2rem 0.4rem 0.5rem 0.5rem rgba(58, 57, 57, 0.1);
 }
 
-/* ********** Hearts filling when hover ********** */
+/*Coeurs hover*/
 
 .fa-heart {
   font-size: 1.5rem;
@@ -253,7 +253,7 @@ img {
   }
 }
 
-/* ********** Home ********** */
+/*ACCUEIL*/
 
 .location {
   text-align: center;
@@ -426,7 +426,7 @@ img {
   margin: 0 0 1rem 0;
 }
 
-/* ********** Menus ********** */
+/*MENUS*/
 
 .headerMenu {
   display: flex;
